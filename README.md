@@ -1,1 +1,1 @@
-# know-world-mountains-quiz
+This is quiz app to test your knowledge about world's mountains.
