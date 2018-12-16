@@ -1,5 +1,4 @@
 questionIndex = 0;
-score = 0;
 
 correctAnswers = 0;
 
@@ -11,13 +10,13 @@ function generateQuestionForm() {
             <fieldset>
                 <div>
                     <input type="radio" class='q1' name="q1" value = "${DATASTORE[questionIndex].choices[0]}" checked>
-                    <span>${DATASTORE[questionIndex].choices[0]}</span><br>
+                    <span id ="span-opt">${DATASTORE[questionIndex].choices[0]}</span><br>
                     <input type="radio" class='q1' name="q1" value = "${DATASTORE[questionIndex].choices[1]}">
-                    <span>${DATASTORE[questionIndex].choices[1]}</span><br>
+                    <span id ="span-opt">${DATASTORE[questionIndex].choices[1]}</span><br>
                     <input type="radio" class='q1' name="q1" value = "${DATASTORE[questionIndex].choices[2]}">
-                    <span">${DATASTORE[questionIndex].choices[2]}</span><br>
+                    <span id ="span-opt">${DATASTORE[questionIndex].choices[2]}</span><br>
                     <input type="radio" class='q1' name="q1" value = "${DATASTORE[questionIndex].choices[3]}">
-                    <span>${DATASTORE[questionIndex].choices[3]}</span>
+                    <span id ="span-opt">${DATASTORE[questionIndex].choices[3]}</span>
                     </div>
             </fieldset>
             <button id="js-btn-submit">Submit</button>
@@ -66,16 +65,12 @@ function handleSubmitButton(){
     })
 };
 
-// function name(params) {
-    
-// }
-
 function templateCorrectFeedback(pic) {
     return `
     <section class="correct-feedback-page" role="main">
-    <h2>That's Correct!</h2>
-    <img src="${pic}" class = "resize" alt="Everest."><br>
-    <button id="js-next-button">Next</button>
+        <h2 id ="feedback-page">That's Correct!</h2>
+        <img src="${pic}" class = "resize" alt="Everest."><br>
+        <button id="js-next-button">Next</button>
     </section>
     `;
 }
@@ -83,9 +78,9 @@ function templateCorrectFeedback(pic) {
 function templateIncorrectFeedback(pic, correct) {
     return `
     <section class="incorrect-feedback-page" role="main">
-    <h2>Nope. Correct Answer: ${DATASTORE[questionIndex].correctAnswer}</h2>
-    <img src="${pic}" class = "resize" alt="Everest."><br>
-    <button id="js-next-button">Next</button>
+        <h2 id ="feedback-page">Nope. Correct Answer: ${DATASTORE[questionIndex].correctAnswer}</h2>
+        <img src="${pic}" class = "resize" alt="Everest."><br>
+        <button id="js-next-button">Next</button>
     </section>
     `;
 }
@@ -107,8 +102,8 @@ function renderQuestionsHtml(){
 function generateFinalScorePage(correctAnswers) {
     $('#container').html(`
       <section id="final-page">
-        <h2>Your Final Score: ${correctAnswers} out of 10</h2>
-        <button id="js-restart-button">Play Again?</button>
+        <h2 id = "feedback-page">Your Final Score: ${correctAnswers} out of 10</h2>
+        <button id="js-restart-button">Would you like to test again?</button>
       </section>
     `);
   }
@@ -119,8 +114,8 @@ $('#container').on('click', '#js-next-button', function(event) {
     if(questionIndex === 9) {
         generateFinalScorePage(correctAnswers);
     } else {
-    nextquizQuestions();
     questionIndex++;    
+    nextquizQuestions();
 }
 });
 }
@@ -130,7 +125,7 @@ function handleRestartButton() {
   
       questionIndex = 1;
   
-      correctAnswers = 0;
+      correctAnswers = 1;
   
       nextquizQuestions();
     });

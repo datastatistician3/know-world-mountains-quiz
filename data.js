@@ -14,7 +14,7 @@ const DATASTORE = [
     },
     {
         number: 2,
-        question: 'Which country is Mt. Everest in, the highest peak of the world?',
+        question: 'In which country is Mt. Everest in?',
         choices: [
             'Pakistan',
             'Nepal',
@@ -40,7 +40,7 @@ const DATASTORE = [
     },
     {
         number: 4,
-        question: 'Mount Logan - Yukon is in which country/countries?',
+        question: 'Mount Logan - Yukon is in which country?',
         choices: [
             'United States',
             'Russia',
@@ -53,7 +53,7 @@ const DATASTORE = [
     },
     {
         number: 5,
-        question: 'Shishapangma is in which country/countries?',
+        question: 'Shishapangma is in which country?',
         choices: [
             'Russia',
             'Turkey',
@@ -66,7 +66,7 @@ const DATASTORE = [
     },
     {
         number: 6,
-        question: 'The mountain Annapurna is in which country/countries?',
+        question: 'The mountain Annapurna is in which country?',
         choices: [
             'Japan',
             'India',
@@ -79,7 +79,7 @@ const DATASTORE = [
     },
     {
         number: 7,
-        question: 'Mount McKinley is in which country/countries?',
+        question: 'Mount McKinley is in which country?',
         choices: [
             'Philippines',
             'United States',
@@ -92,7 +92,7 @@ const DATASTORE = [
     },
     {
         number: 8,
-        question: 'Table Mountain is in which country/countries?',
+        question: 'Table Mountain is in which country?',
         choices: [
             'Morocco',
             'South-Africa',
@@ -105,7 +105,7 @@ const DATASTORE = [
     },
     {
         number: 9,
-        question: 'Bishorn is in which country/countries?',
+        question: 'Bishorn is in which country?',
         choices: [        
            'Austria alone',
            'Switzerland alone',
@@ -118,7 +118,7 @@ const DATASTORE = [
     },
     {
         number: 10,
-        question: 'Mauna Kea is in which country/countries?',
+        question: 'Mauna Kea is in which country?',
         choices: [        
             'United States',
             'Japan',

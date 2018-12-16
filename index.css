@@ -1,32 +1,84 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body * {
+	box-sizing: border-box;
+	font-family: Archivo;
 }
 
+#container {
+    height: 100%;
+}
 
 img.resize {
     width:600px;
     height:400px;
+
+    position: absolute;
+    top: 20%;
+    left: 35%;
   }
 
-body {
-    background: url("img/everest-cover.png") fixed;
-    font-family: 'Metrophobic', sans-serif, 
+body, html {
+    min-height: 100%;
 }
 
+#question-section {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/*background-color: rgba(255, 255, 255, .4);*/
+}
+
+body {
+    background: url("img/everest-cover.png");
+    font-family: 'Metrophobic', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.correct-feedback-page#feedback-page {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    text-align: center;
+}
+
+#js-next-button {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
+
+#feedback-page {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+
 button {
-    display: block;    
+    display: block;  
+    min-height: 80px;  
     padding: 20px;
     border: none;
     background-color: #14AA96;
     text-transform: uppercase;
     border-radius: 0;
     cursor: pointer;
-    transition: all 03s ease;
-    margin-top: 400px;
-    margin-left: 600px;
     font-weight: bold;
+    font-size: 1.5em;
+    top: 50%;
+    position: absolute;
+    left: 40%;
+}
+
+input[type="radio"]:hover {
+    cursor: pointer;
+  }
+
+  input[type="radio"] {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Chrome, Safari, Opera */
+    transform: scale(3);
 }
 
 h1, h2 {
@@ -38,14 +90,49 @@ h1, h2 {
     padding: 0;
     position: absolute;
     top: 10%;
-    left: 7%;
+    left: 15%;
     transform: translateX();
 }
 
-fieldset {
-    background-color: #860505;
+button:hover {
+	background-color: rgb(200, 9, 66);
+	cursor: pointer;
 }
 
-form {
-    background-color: rgba(255, 255, 255, .4);
-  }
+fieldset {
+    position: absolute;
+    border: none;
+    top: 20%;
+    left: 40%;
+    font-size: 3em;
+}
+
+input {
+    margin: 1em;
+}
+
+span#count-questions {
+    font-size: 3em;
+    color: aqua;
+    margin-left: 30%;
+}
+
+span#count-score{
+    font-size: 3em;
+    margin-left: 10%;
+    color: aqua;
+    min-width: 100%;
+    background-color:   
+}
+
+#question {
+    text-align: center;
+    margin-left: 8%;
+}
+
+#span-opt {
+    color: rgb(176, 236, 11);
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #14AA96;
+}
