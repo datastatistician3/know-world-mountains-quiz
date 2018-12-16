@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img.resize {
+    width:600px;
+    height:400px;
+  }
+
+body {
+    background: url("img/everest-cover.png") fixed;
+    font-family: 'Metrophobic', sans-serif, 
+}
+
+button {
+    display: block;    
+    padding: 20px;
+    border: none;
+    background-color: #14AA96;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 03s ease;
+    margin-top: 400px;
+    margin-left: 600px;
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 200px;
+    color: #E5A43E;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    transform: translateX();
+}
+
+fieldset {
+    background-color: #860505;
+}
+
+form {
+    background-color: rgba(255, 255, 255, .4);
+  }
