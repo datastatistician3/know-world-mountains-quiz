@@ -1,6 +1,6 @@
 body * {
 	box-sizing: border-box;
-	font-family: Archivo;
+    font-family: Archivo;
 }
 
 #container {
@@ -82,7 +82,7 @@ input[type="radio"]:hover {
 }
 
 h1, h2 {
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     margin-bottom: 200px;
     color: #E5A43E;
@@ -119,7 +119,7 @@ span#count-questions {
 
 span#count-score{
     font-size: 3em;
-    margin-left: 10%;
+    margin-left: 5%;
     color: aqua;
     min-width: 100%;
     background-color:   
@@ -135,4 +135,6 @@ span#count-score{
     font-family: sans-serif;
     font-weight: bold;
     background-color: #14AA96;
+    font-size: .5em;
+    
 }
