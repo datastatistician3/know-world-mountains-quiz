@@ -78,7 +78,7 @@ function templateCorrectFeedback(pic) {
 function templateIncorrectFeedback(pic, correct) {
     return `
     <section class="incorrect-feedback-page" role="main">
-        <h2 id ="feedback-page">Nope. Correct Answer: ${DATASTORE[questionIndex].correctAnswer}</h2>
+        <h2 id ="feedback-page">Nope. It's ${DATASTORE[questionIndex].correctAnswer}</h2>
         <img src="${pic}" class = "resize" alt="Everest."><br>
         <button id="js-next-button">Next</button>
     </section>
