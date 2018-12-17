@@ -60,8 +60,6 @@ function handleSubmitButton(){
           } else {
             showIncorrectFeedback();
           }
-
-    
     })
 };
 
@@ -92,11 +90,6 @@ function showCorrectFeedback() {
 
 function showIncorrectFeedback() {
     $('#container').html(templateIncorrectFeedback(DATASTORE[questionIndex].image, DATASTORE[questionIndex].correctAnswer));
-}
-
-
-function renderQuestionsHtml(){
-
 }
 
 function generateFinalScorePage(correctAnswers) {
@@ -130,8 +123,6 @@ function handleRestartButton() {
       nextquizQuestions();
     });
   }
-
-
 
 function main(params) {
     handleStartButton();
