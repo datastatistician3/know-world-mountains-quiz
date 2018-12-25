@@ -9,14 +9,14 @@ function generateQuestionForm() {
         <form>
             <fieldset>
                 <div>
-                    <input type="radio" class='q1' name="q1" value = "${DATASTORE[questionIndex].choices[0]}" checked>
-                    <span id ="span-opt">${DATASTORE[questionIndex].choices[0]}</span><br>
-                    <input type="radio" class='q1' name="q1" value = "${DATASTORE[questionIndex].choices[1]}">
-                    <span id ="span-opt">${DATASTORE[questionIndex].choices[1]}</span><br>
-                    <input type="radio" class='q1' name="q1" value = "${DATASTORE[questionIndex].choices[2]}">
-                    <span id ="span-opt">${DATASTORE[questionIndex].choices[2]}</span><br>
-                    <input type="radio" class='q1' name="q1" value = "${DATASTORE[questionIndex].choices[3]}">
-                    <span id ="span-opt">${DATASTORE[questionIndex].choices[3]}</span>
+                    <input type="radio" name='q1' id="c1" value = "${DATASTORE[questionIndex].choices[0]}" checked>
+                    <label for="c1">${DATASTORE[questionIndex].choices[0]}</label><br>
+                    <input type="radio" name='q1' id="c2" value = "${DATASTORE[questionIndex].choices[1]}">
+                    <label for="c2">${DATASTORE[questionIndex].choices[1]}</label><br>
+                    <input type="radio" name='q1' id="c3" value = "${DATASTORE[questionIndex].choices[2]}">
+                    <label for="c3">${DATASTORE[questionIndex].choices[2]}</label><br>
+                    <input type="radio" name='q1' id="c3" value = "${DATASTORE[questionIndex].choices[3]}">
+                    <label for="c4">${DATASTORE[questionIndex].choices[0]}</label><br>
                     </div>
             </fieldset>
             <button id="js-btn-submit">Submit</button>
@@ -116,9 +116,9 @@ $('#container').on('click', '#js-next-button', function(event) {
 function handleRestartButton() {
     $('#container').on('click', '#js-restart-button', function(event) {
   
-      questionIndex = 1;
+      questionIndex = 0;
   
-      correctAnswers = 1;
+      correctAnswers = 0;
   
       nextquizQuestions();
     });

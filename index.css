@@ -68,7 +68,11 @@ button {
     font-size: 1.5em;
     top: 60%;
     position: absolute;
-    left: 40%;
+    left: 35%;
+}
+
+#js-restart-button{
+    left:30%;
 }
 
 input[type="radio"]:hover {
@@ -136,5 +140,17 @@ span#count-score{
     font-weight: bold;
     background-color: #14AA96;
     font-size: .5em;
-    
+}
+
+@media (max-width: 768px){
+    html, body {
+        font-size: 80%;
+    }
+
+    .correct-feedback-page img, .incorrect-feedback-page img {
+        width: 65%;
+        height: 50%;
+        left: 20%;
+    }
+
 }
